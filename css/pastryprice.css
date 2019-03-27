@@ -1,0 +1,171 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+}
+
+.col-md-3 {
+    max-width: 26%;
+}
+
+.sky {
+    width: 90%;
+    height: 500px;
+    top: -61px;
+    left: -255px;
+    position: absolute;
+    background: url(../img/icons8-солнце.svg);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: 50% 50%;
+}
+
+#weather {
+    margin-top: 150px;
+    margin-left: 30%;
+
+}
+
+.footer {
+    margin-top: 59px;
+    text-align: center
+}
+
+.weatherheader {
+    min-height: 200px;
+    background: rgba(255, 255, 255, 0.9);
+    margin-left: 8%;
+
+}
+
+h1 {
+
+    font-size: 32px;
+    background: white;
+    width: 100%;
+    display: inline-block;
+    padding: 20px;
+    color: #606060;
+    padding-bottom: 11px;
+    padding-top: 19px;
+    padding-right: 35px;
+
+
+}
+
+.list-group {
+    padding: 0px;
+    border: 14px solid white;
+}
+
+.list-group-item:first-child {
+    font-size: 20px;
+}
+
+.list-group-item {
+    text-align: left;
+    padding-left: 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.active {
+    background: #ff9c00 !important;
+    border: none;
+}
+
+
+
+.form-control:focus {
+    text-transform: uppercase;
+    box-shadow: none;
+    outline: none;
+    border: 1px solid grey;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    background: url(../img/icons8-солнце.svg);
+}
+
+.search .btn:focus {
+    box-shadow: none;
+}
+
+.search .btn {
+    background: #ff9c00;
+    color: white;
+    border-radius: 50%;
+    width: 66px;
+    height: 63px;
+    font-size: 22px;
+    transition: 0.3s ease-in-out;
+
+}
+
+.search .btn:hover {
+    background: #ff9c00;
+    color: white;
+    border: 3px dotted white;
+
+}
+
+.input-group-btn {
+    position: absolute;
+    top: 261%;
+    left: 35%;
+}
+
+
+.input-price {
+    width: 62%;
+    margin: 0 auto;
+    margin-top: 100px;
+
+}
+
+input[type="text"] {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+button[type="submit"]:focus {
+    box-shadow: none;
+}
+
+.ingredients-list {
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.ingredients-list ul {
+    list-style-type: circle !important;
+    /*width: 320px;*/
+
+}
+
+.ingredients-list ul>li {
+    float: left;
+    margin-left: 30px;
+    min-width: 100px;
+    cursor: default;
+    padding: 5px;
+
+}
+
+.ingredient-name {
+    margin-left: 4%;
+    margin-right: 22%;
+    margin-bottom: 80px;
+}
