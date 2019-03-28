@@ -9,9 +9,9 @@
     <title>Patry cost price</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/motion.min.css">
     <link rel="stylesheet" href="css/pastryprice.css" />
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -21,20 +21,23 @@
     <![endif]-->
 </head>
 
-<body>
+<body class="animation fade-in delay-05s">
+
     <div class="container-fluid">
         <div id="pastry">
+
             <div class="row">
                 <pastry-data @pastry="getData"></pastry-data>
             </div>
             <div class="row">
+                <div class="sum"><h2>{{sum + " " + "₽" }}</h2></div>
                 <div class="ingredients-list">
                     <ul class="ingredient-name">
                         <li>Ingredient</li>
                         <li>Quantity</li>
                         <li>Price</li>
                         <li>Cost</li>
-                        <li>{{sum + " " + "₽" }}</li>
+
                     </ul>
                     <ul class="item" v-for="(item,index) in ingdata">
                         <li style="list-style-type: none;">{{index+1}}</li>
@@ -42,12 +45,13 @@
                             {{ {value,key}|dimension}}
                     </ul>
                 </div>
+
             </div>
         </div>
     </div>
     <div class="clear"></div>
     <div class="container-fluid footer">
-        Site designed by <a href="#"> PerfettoScritto.</a>
+        Site designed by <a href="#"> PerfettoScritto</a> .
         Icon by
         <a href="https://icons8.com">Icons8</a>
     </div>

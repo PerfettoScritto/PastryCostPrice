@@ -1,11 +1,40 @@
 html {
     position: relative;
     min-height: 100%;
+
 }
 
 body {
     margin-bottom: 60px;
+background: url('../img/pexels-photo-873653fe.jpg')  no-repeat;
+
+
+    background-attachment: cover;
 }
+.sum{
+   /* background: linear-gradient(135deg, #EBEBEB 2%,#D1D1D1 200%);*/
+    background: rgba(255,255,255,0.6);
+    position: fixed;
+
+
+
+right:0;
+margin-top: 50px;
+margin-right:20px;
+width:200px;
+min-height: 300px;
+text-align: center;
+
+
+
+
+}
+
+.sum h2{
+    margin-top: 120px;
+    font-size: 35px;
+}
+
 
 .footer {
     position: absolute;
@@ -18,35 +47,24 @@ body {
     max-width: 26%;
 }
 
-.sky {
-    width: 90%;
-    height: 500px;
-    top: -61px;
-    left: -255px;
-    position: absolute;
-    background: url(../img/icons8-солнце.svg);
-    background-repeat: no-repeat;
-    background-size: 30%;
-    background-position: 50% 50%;
-}
 
-#weather {
-    margin-top: 150px;
-    margin-left: 30%;
-
-}
 
 .footer {
     margin-top: 59px;
-    text-align: center
+    text-align: center;
+    color:white;
+    font-weight: 600;
+    font-size: 15px;
 }
 
-.weatherheader {
-    min-height: 200px;
-    background: rgba(255, 255, 255, 0.9);
-    margin-left: 8%;
-
+.footer a{
+    color:white;
+   background:#cd3509;
+   padding:3px;
+   padding-left: 5px;
+   padding-right: 5px;
 }
+
 
 h1 {
 
@@ -84,18 +102,34 @@ h1 {
     border: none;
 }
 
-
-
+label{
+    color:#686868;
+}
+.form-control{
+   /* background: none;
+    color:white;*/
+}
 .form-control:focus {
+    color:#686868;
     text-transform: uppercase;
     box-shadow: none;
     outline: none;
-    border: 1px solid grey;
+    border: 1px solid white;
     border-left: none;
     border-right: none;
     border-top: none;
-    background: url(../img/icons8-солнце.svg);
+    background: transparent;
 }
+
+/*.form-control::-webkit-input-placeholder {color:white;}*//* webkit */
+/*.form-control::-moz-placeholder          {color:white;}*//* Firefox 19+ */
+/*.form-control:-moz-placeholder           {color:white;}*//* Firefox 18- */
+/*.form-control:-ms-input-placeholder      {color:white;}*//* IE */
+
+:focus::-webkit-input-placeholder {color:#686868;}/* webkit */
+:focus::-moz-placeholder          {color:#686868;}/* Firefox 19+ */
+:focus:-moz-placeholder           {color:#686868;}/* Firefox 18- */
+:focus:-ms-input-placeholder      {color:#686868;}/* IE */
 
 .search .btn:focus {
     box-shadow: none;
@@ -127,11 +161,19 @@ h1 {
 
 
 .input-price {
-    width: 62%;
+    width: auto;
     margin: 0 auto;
     margin-top: 100px;
-
+    background: rgba(255,255,255,0.7);
+    padding:10px;
+    margin-left: 5%;
+    padding: 10px;
+    margin-left: 18%;
+    padding-left: 25px;
+   padding-top: 10px;
+   padding-bottom: 2px;
 }
+
 
 input[type="text"] {
     border-left: none;
@@ -146,15 +188,32 @@ button[type="submit"]:focus {
 .ingredients-list {
     margin: 0 auto;
     margin-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+    padding-top: 30px;
+    background: rgba(255,255,255,0.7);
+    min-height: 300px;
+    max-height: 300px;
+    width: 59%;
+    margin-left: 19%;
 }
 
+
+ul {
+    list-style-type: circle;
+}
+.ingredients-list{
+     overflow-y: auto;
+
+}
 .ingredients-list ul {
-    list-style-type: circle !important;
+    list-style-type: none !important;
+
     /*width: 320px;*/
 
 }
-
+ul.item:last-child li{
+  margin-bottom:50px;
+}
 .ingredients-list ul>li {
     float: left;
     margin-left: 30px;
@@ -165,7 +224,17 @@ button[type="submit"]:focus {
 }
 
 .ingredient-name {
-    margin-left: 4%;
-    margin-right: 22%;
-    margin-bottom: 80px;
+    margin-left: 15%;
+margin-right: 4%;
+    margin-bottom: 65px;
+    list-style-type: circle;
+
+
 }
+
+.btn-primary{
+    margin-left: -18px;
+padding-left: 20px;
+padding-right: 20px;
+}
+

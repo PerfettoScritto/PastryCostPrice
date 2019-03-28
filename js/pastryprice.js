@@ -135,16 +135,7 @@ var app = new Vue({
     },
 
 
-    computed: {
 
-        totalSum: function() {
-
-            var costIngredients = document.querySelectorAll(".cost");
-            console.log(costIngredients);
-        }
-
-
-    },
 
     components: {
         pastryData: pastryData
